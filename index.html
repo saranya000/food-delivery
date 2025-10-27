@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title>Food Delivery - Annapoorna Hotel</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <h1>🍛 Annapoorna Hotel Menu</h1>
+ <div class="menu">
+ <div class="food-item">
+ <h3>🍛 Idli (2 pcs)</h3>
+ <p>₹30</p>
+ <button onclick="addToCart('Idli', 30)">Add to Cart</button>
+ </div>
+ <div class="food-item">
+ <h3>🍛 Meals</h3>
+ <p>₹80</p>
+ <button onclick="addToCart('Meals', 80)">Add to Cart</button>
+ </div>
+ <div class="food-item">
+ <h3>☕Filter Coffee</h3>
+ <p>₹20</p>
+ <button onclick="addToCart('Filter Coffee', 20)">Add to Cart</button>
+ </div>
+ </div>
+ <h2>🍛 Your Cart</h2>
+ <ul id="cart-list"></ul>
+ <p>Total: ₹<span id="total">0</span></p>
+ <button onclick="placeOrder()">Place Order</button>
+ <script src="script.js"></script>
+</body>
+</html>
